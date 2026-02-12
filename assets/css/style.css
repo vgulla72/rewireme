@@ -151,7 +151,7 @@ p {
   }
 
   .container {
-    margin-top: 100px;
+    margin-top: 160px;
     padding: 24px;
   }
 }
@@ -171,5 +171,9 @@ p {
 
   .nav a {
     font-size: 0.95rem;
+  }
+   .container {
+    margin-top: 200px;
+    padding: 24px;
   }
 }

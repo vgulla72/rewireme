@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Second Cup | Vasantha Gullapalli</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vasantha Gullapalli</title>
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,12 +12,12 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
   <style>
   body {
     margin: 0;
     padding: 0;
-    height: 100vh;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
     /* Subtle gray → yellow gradient */
@@ -31,19 +32,20 @@
       margin-top: 2.5rem;
       max-width: 480px;
     }
+  
 </style>
 </head>
 
 <body>
 
   <!-- Navigation -->
- <!-- Navbar -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
   <div class="container">
     
     <!-- Logo -->
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="TheSecondCup-logo.png" alt="The Second Cup" height="50">
+      <img src="mickey.jpg" alt="Vasantha Gullapalli" height="45" class="me-2 rounded-circle">
     </a>
 
     <!-- Mobile Toggle -->
@@ -55,10 +57,10 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active fw-semibold" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active fw-semibold" href="secondcup.html">The Second Cup</a>
+          <a class="nav-link" href="secondcup.html">The Second Cup</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="services.html">Professional Services</a>
@@ -72,32 +74,57 @@
 </nav>
 
   <!-- Main Content -->
-  <section class="page-section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
+<main class="main">
+ <section id="hero" class="hero">
 
-          <h2 class="page-title pt-3">The Second Cup</h2>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-          <p class="lead-subtle">
-            Real-world reflections on work, leadership, and life under real constraints.
-          </p>
+        <div class="row align-items-center gx-5 gy-5">
 
-          <p class="content-text">
+          <div class="col-lg-7">
+            <div class="intro" data-aos="fade-right" data-aos-delay="150">
+              <div class="eyebrow d-inline-flex align-items-center gap-2 mb-3">
+                <span class="dot"></span>
+                <span class="text">Real-world reflections on work, leadership, and life.</span>
+              </div>
+
+              <h1 class="display-heading mb-3">
+                The Second Cup
+              </h1>
+
+              <p class="content-text">
             The Second Cup is my newsletter where I share thoughtful reflections shaped by lived experience.
             Each edition centers on meaningful inflection points — from career shifts to personal tradeoffs — with the benefit of hindsight.
           </p>
 
           <p class="content-text">
-            If something here helps you feel seen, think differently, or avoid a mistake I once made, then it has done its job.
+             If something here helps you feel seen, think differently, or avoid a mistake I once made, then it has done its job.
           </p>
 
           <p class="content-text">
-            You can subscribe below for free so each edition lands directly in your inbox.
+             You can subscribe below for free so each edition lands directly in your inbox.</p>
+
+
+<!--          <p class="content-text">
+            You can 
+            <a href="mailto:vasantha.gullapalli@gmail.com">
+              email me directly
+            </a>.
           </p>
 
-          <!-- Substack Embed -->
-          <div class="newsletter-embed">
+          <p class="content-text">
+            Thanks for being here.
+          </p> -->
+
+
+
+              
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <figure class="portrait-wrap position-relative" data-aos="fade-left" data-aos-delay="200">
+            <div class="newsletter-embed">
             <iframe 
               src="https://secondcup.substack.com/embed" 
               width="100%" 
@@ -107,12 +134,14 @@
               scrolling="no">
             </iframe>
           </div>
+            </figure>
+          </div>
 
         </div>
-      </div>
-    </div>
-  </section>
 
+      </div>
+
+    </section><!-- /Hero Section -->
   <!-- Footer -->
   <footer class="text-center">
     <div class="container">
@@ -122,6 +151,6 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+</main>
 </body>
 </html>
